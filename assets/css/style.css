@@ -1,0 +1,81 @@
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: darksalmon;
+  max-width: 800px;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+body .container {
+  margin-left: 60px;
+  margin-top: 35px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  border: 0px;
+  background-color: white;
+}
+body #tittle {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+}
+body .pentagrama_1, body .pentagrama_2, body .pentagrama_3 {
+  display: flex;
+  flex-direction: row;
+}
+body .linhas_espacos {
+  width: 120px;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+}
+body .linhas_espacos img {
+  display: none;
+  max-height: 45px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+body .linhas_espacos .linha {
+  display: flex;
+  background-color: black;
+  height: 3px;
+  border: 0px;
+  justify-content: center;
+  align-items: center;
+}
+body .linhas_espacos #linha_do {
+  background-color: transparent;
+}
+body .linhas_espacos #linha_do img {
+  max-width: 120px;
+  -webkit-transform: rotate(13deg);
+  -ms-transform: rotate(13deg);
+  transform: rotate(13deg);
+  display: none;
+}
+body .linhas_espacos #linha_do #espacos_do {
+  background-color: white;
+}
+body .linhas_espacos .espaco {
+  display: flex;
+  background-color: white;
+  border: 0px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+body .linhas_espacos:nth-child(1) #linha_sol img {
+  display: block;
+  max-height: 335px;
+  margin-top: -78px;
+  margin-left: -20px;
+}
+
+/*# sourceMappingURL=style.css.map */
