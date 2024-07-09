@@ -96,7 +96,7 @@ for(var z = 1;z<4;z++ ){
     
     (document.querySelector(`body .pentagrama_${y} .linhas_espacos:nth-child(${x}) \
     div:nth-child(${notes_numbers}) img`)).style.display='block';//essa barra '\' eh utilizada para separar o codigo em mais de uma linha
-    //cssStart[i].style.display='block';
+    //cssStart[i].style.display='block.';
     
     notes_numbers=0;
     
