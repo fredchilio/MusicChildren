@@ -103,7 +103,7 @@ for(var z = 1;z<4;z++ ){
     }
     
 
-//document.querySelector(`body .pentagrama_${y} .linhas_espacos:nth-child(${x}) \
+//document.querySelector(`body .pentagrama_${y} .linhas_espacos:nth-child(${x}) h\
 //div:nth-child(${12}) img`).style.backgroundImage = "url('./img/loading-6')";
 
 
