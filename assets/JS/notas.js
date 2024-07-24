@@ -49,16 +49,16 @@ global=musicas.musica3
 //var Index = 0;
 //var titulo = document.querySelector(".tituloDoSite");
 var link1 = document.querySelector(".m1");
-
+link1.textContent=musicas.musica1[0][0];
 
 
 
 var link2 = document.querySelector(".m2");
-
+link2.textContent=musicas.musica2[0][0];
 
 
 var link3 = document.querySelector(".m3");
-
+link3.textContent=musicas.musica3[0][0];
 
 
 // Mapeamento das notas para números
