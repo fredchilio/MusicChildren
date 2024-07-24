@@ -1,3 +1,28 @@
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+          
+        }
+      }
+    }
+  }
+
+  
+
+  
+
+
+
 //Definição das músicas
 const musicas = {
     musica1: [
@@ -19,6 +44,22 @@ const musicas = {
         ['do', 'do', 'sol', 'sol', 'la', 'la', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 're', 'do']
     ]
 };
+global=musicas.musica3
+//var listaDeHokages = [,'Tobirama','Hiruzen','Minato','Tsunade','Kakashi','Naruto'];
+//var Index = 0;
+//var titulo = document.querySelector(".tituloDoSite");
+var link1 = document.querySelector(".m1");
+
+
+
+
+var link2 = document.querySelector(".m2");
+
+
+
+var link3 = document.querySelector(".m3");
+
+
 
 // Mapeamento das notas para números
 const notaParaNumero = {
@@ -61,8 +102,42 @@ function exibirPartitura(musica) {
     }
 }
 
+function limparPartitura() {
+        const notas = document.querySelectorAll(".notas");
+        notas.forEach(img => img.style.display = 'none');
+        const notas2 = document.querySelectorAll(".notas");
+        notas2.forEach(img => img.style.display = 'none');
+        const notas3 = document.querySelectorAll(".notas");
+        notas3.forEach(img => img.style.display = 'none');
+    }
+
 // Chamar a função com a música desejada
-exibirPartitura(musicas.musica2);
+exibirPartitura(global);
+link1.addEventListener("click", function(){
+
+    global = musicas.musica1;
+    limparPartitura()
+    exibirPartitura(global)
+    
+    
+    })
+
+    link2.addEventListener("click", function(){
+
+        global = musicas.musica2;
+        limparPartitura()
+        exibirPartitura(global)
+        
+        })
+
+        link3.addEventListener("click", function(){
+
+            global = musicas.musica3;
+            limparPartitura()
+           
+            exibirPartitura(global)
+            
+            })
 /***const notaParaNumero = {
     'do': 12,
     're': 11,
