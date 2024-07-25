@@ -26,7 +26,7 @@ function myFunction() {
 //Definição das músicas
 const musicas = {
     musica1: [
-        ['Tinkle1'],
+        ['Twinkle Twinkle Little Star '],
         ['do', 'do', 'sol', 'sol', 'la', 'la', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 're', 'do'],
         ['sol', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 'sol', 'sol', 'fa', 'fa', 'mi', 'mi', 're'],
         ['do', 'do', 'sol', 'sol', 'la', 'la', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 're', 'do']
@@ -38,7 +38,7 @@ const musicas = {
         ['do', 'fa', 'mi', 're', 'do', 're', 'do', 'do', 'do', 're', 'do', 're', 'mi', 'fa']
     ],
     musica3: [
-        ['Black Shep'],
+        ['Black Sheep'],
         ['do', 'do', 'sol', 'sol', 'la', 'la', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 're', 'do'],
         ['sol', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 'sol', 'sol', 'fa', 'fa', 'mi', 'mi', 're'],
         ['do', 'do', 'sol', 'sol', 'la', 'la', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 're', 'do']
