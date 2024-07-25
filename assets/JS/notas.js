@@ -53,12 +53,19 @@ link1.textContent=musicas.musica1[0][0];
 
 
 
+
+
 var link2 = document.querySelector(".m2");
 link2.textContent=musicas.musica2[0][0];
 
 
 var link3 = document.querySelector(".m3");
 link3.textContent=musicas.musica3[0][0];
+
+let imgm = document.querySelector(".body");
+//imgm.style.background = '#eeb7b7 url("../img/sheep3.jpg")';
+
+
 
 
 // Mapeamento das notas para números
@@ -118,15 +125,20 @@ link1.addEventListener("click", function(){
     global = musicas.musica1;
     limparPartitura()
     exibirPartitura(global)
+
     
     
     })
-
+    
     link2.addEventListener("click", function(){
 
         global = musicas.musica2;
-        limparPartitura()
-        exibirPartitura(global)
+        limparPartitura();
+        exibirPartitura(global);
+        imgm.style.background="none";
+       imgm.getElementsByTagName("body")[0].style = 'background-image:url("../img/sheep3.jpg");'
+       
+       
         
         })
 

@@ -2,11 +2,16 @@ body {
   margin: 0px;
   display: flex;
   flex-direction: row;
-  background-color: darksalmon;
+  
+  background-image: url("../img/fundo.jpg");
+  
+  
   max-width: 800px;
   width: 90%;
   flex-wrap: wrap;
 }
+
+
 
 body .container {
   margin-left: 60px;
@@ -15,7 +20,7 @@ body .container {
   display: flex;
   flex-direction: column;
   border: 0px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.712);
 }
 body #tittle {
   display: flex;
