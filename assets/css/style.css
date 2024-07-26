@@ -55,6 +55,7 @@ body .linhas_espacos #linha_do {
 }
 body .linhas_espacos #linha_do img {
   max-width: 120px;
+  height: auto;
   transform: rotate(13deg);
   display: none;
 }
@@ -74,4 +75,32 @@ body .linhas_espacos:nth-child(1) #linha_sol img {
   max-height: 335px;
   margin-top: -78px;
   margin-left: -20px;
+  height: auto;
+}
+
+footer {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  background: url("../img/fundo.jpg");
+  max-width: 800px;
+  width: 90%;
+  flex-wrap: wrap;
+}
+footer .foot {
+  background-color: transparent;
+  display: inline-flex;
+  margin-top: 50px;
+}
+footer .foot div {
+  margin-left: 12px;
+  margin-right: 12px;
+  flex-direction: row;
+}
+footer .foot img {
+  margin-left: 12px;
+  margin-right: 20px;
+  max-width: 60px;
+  height: auto;
+  transform: rotate(13deg);
 }/*# sourceMappingURL=style.css.map */

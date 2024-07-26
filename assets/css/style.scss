@@ -65,7 +65,7 @@ body{
                    
                     img{
                         max-width: 120px;
-                        height: auto
+                        height: auto;
                         -webkit-transform: rotate(13deg);
                         -ms-transform: rotate(13deg);
                         transform: rotate(13deg);
@@ -103,5 +103,41 @@ body{
             }
         }
     }
+
+    
   
+}
+
+footer{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    background: url("../img/fundo.jpg");    
+    max-width: 800px;
+    width: 90%;
+    flex-wrap: wrap;
+.foot{
+    background-color: transparent;
+    display:inline-flex;
+    margin-top: 50px;
+
+    div{
+        margin-left: 12px;
+        margin-right: 12px;
+        flex-direction: row;
+        
+    }
+         
+          img{
+            margin-left: 12px;
+            margin-right: 20px;
+              max-width: 60px;
+              height: auto;
+              -webkit-transform: rotate(13deg);
+              -ms-transform: rotate(13deg);
+              transform: rotate(13deg);
+              
+          }
+
+  }
 }
