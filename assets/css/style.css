@@ -79,7 +79,7 @@ body .linhas_espacos:nth-child(1) #linha_sol img {
 }
 
 footer {
-  margin: 0px;
+  margin: 60px;
   display: flex;
   flex-direction: row;
   background: url("../img/fundo.jpg");
@@ -91,6 +91,9 @@ footer .foot {
   background-color: transparent;
   display: inline-flex;
   margin-top: 50px;
+}
+footer .foot p {
+  font-size: 20px;
 }
 footer .foot div {
   margin-left: 12px;

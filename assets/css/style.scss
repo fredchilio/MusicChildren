@@ -109,7 +109,8 @@ body{
 }
 
 footer{
-    margin: 0px;
+    
+    margin: 60px;
     display: flex;
     flex-direction: row;
     background: url("../img/fundo.jpg");    
@@ -120,7 +121,10 @@ footer{
     background-color: transparent;
     display:inline-flex;
     margin-top: 50px;
-
+    p{
+        font-size: 20px;
+        
+    }
     div{
         margin-left: 12px;
         margin-right: 12px;
