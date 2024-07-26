@@ -2,16 +2,11 @@ body {
   margin: 0px;
   display: flex;
   flex-direction: row;
-  
-  background-image: url("../img/fundo.jpg");
-  
-  
+  background: url("../img/fundo.jpg");
   max-width: 800px;
   width: 90%;
   flex-wrap: wrap;
 }
-
-
 
 body .container {
   margin-left: 60px;
@@ -20,7 +15,7 @@ body .container {
   display: flex;
   flex-direction: column;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.712);
+  background-color: white;
 }
 body #tittle {
   display: flex;
@@ -60,8 +55,6 @@ body .linhas_espacos #linha_do {
 }
 body .linhas_espacos #linha_do img {
   max-width: 120px;
-  -webkit-transform: rotate(13deg);
-  -ms-transform: rotate(13deg);
   transform: rotate(13deg);
   display: none;
 }
@@ -81,6 +74,4 @@ body .linhas_espacos:nth-child(1) #linha_sol img {
   max-height: 335px;
   margin-top: -78px;
   margin-left: -20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
