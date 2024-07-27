@@ -86,7 +86,6 @@ footer {
 }
 footer .foot {
   background-color: transparent;
-  margin: 15px;
   margin-left: 60px;
   margin-top: 50px;
   /*teste*/
@@ -99,16 +98,11 @@ footer .foot {
 footer .foot .doremiquebra {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  text-align: center;
 }
 footer .foot p {
   font-weight: bolder;
 }
 footer .foot img {
-  margin-right: 40px;
   max-width: 60px;
   height: auto;
   transform: rotate(13deg);

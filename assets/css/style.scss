@@ -121,7 +121,7 @@ footer{
     
 .foot{
     background-color: transparent;
-    margin: 15px;
+    
     margin-left: 60px;
     
     
@@ -137,10 +137,9 @@ display: flex;
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 10px; // Ajuste conforme necessário para o espaçamento entre colunas
-  text-align: center; // Centraliza o texto dentro da coluna
+  
+   // Ajuste conforme necessário para o espaçamento entre colunas
+  // Centraliza o texto dentro da coluna
     }
     
     
@@ -153,7 +152,7 @@ display: flex;
          
           img{
          
-            margin-right: 40px;
+            
               max-width: 60px;
               height: auto;
               -webkit-transform: rotate(13deg);
