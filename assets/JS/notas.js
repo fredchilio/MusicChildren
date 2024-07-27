@@ -42,6 +42,12 @@ const musicas = {
         ['do', 'do', 'sol', 'sol', 'la', 'la', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 're', 'do'],
         ['sol', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 'sol', 'sol', 'fa', 'fa', 'mi', 'mi', 're'],
         ['do', 'do', 'sol', 'sol', 'la', 'la', 'sol', 'fa', 'fa', 'mi', 'mi', 're', 're', 'do']
+    ],
+    musica4: [
+        ['HappyBirthday'],
+        ['do', 'do', 're', 'do', 'fa', 'mi', 'do', 'do', 're', 'do', 'sol', 'fa', '', ''],
+        ['do', 'do', 'fa', 'la', 'fa', 'mi', 're', 'fa', 'sol', 'la', 'fa', 'sol', 'fa', ''],
+        ['', '', '', '', '', '', '', '', '', '', '', '', '', '']
     ]
 };
 global=musicas.musica3
@@ -51,10 +57,6 @@ global=musicas.musica3
 var link1 = document.querySelector(".m1");
 link1.textContent=musicas.musica1[0][0];
 
-
-
-
-
 var link2 = document.querySelector(".m2");
 link2.textContent=musicas.musica2[0][0];
 
@@ -62,7 +64,10 @@ link2.textContent=musicas.musica2[0][0];
 var link3 = document.querySelector(".m3");
 link3.textContent=musicas.musica3[0][0];
 
-let imgm = document.querySelector(".body");
+var link4 = document.querySelector(".m4");
+link4.textContent=musicas.musica4[0][0];
+
+//let imgm = document.querySelector(".body"); 27/07/24
 //imgm.style.background = '#eeb7b7 url("../img/sheep3.jpg")';
 
 
@@ -150,6 +155,15 @@ link1.addEventListener("click", function(){
             exibirPartitura(global)
             
             })
+            link4.addEventListener("click", function(){
+
+                
+                limparPartitura()
+                global = musicas.musica4;
+               
+                exibirPartitura(global)
+                
+                })
 /***const notaParaNumero = {
     'do': 12,
     're': 11,
