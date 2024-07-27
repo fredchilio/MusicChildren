@@ -3,8 +3,8 @@ body {
   display: flex;
   flex-direction: row;
   background: url("../img/fundo.jpg");
-  max-width: 800px;
-  width: 90%;
+  max-width: 100%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
