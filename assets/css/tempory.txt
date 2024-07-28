@@ -10,20 +10,22 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background: url("../img/fundo.jpg");
+  background: url("../img/fundo.jpg") no-repeat center center fixed;
+  background-size: cover;
   width: 100%;
-  max-width: 100%;
-  align-items: center; // Center content horizontally
+  max-width: $max-container-width;
+  align-items: center;
 
   .container {
     margin: 35px auto 0 auto;
-    width: $container-width;
+    width: 100%;
     max-width: $max-container-width;
-    display: flex;
+    display:flex;
     flex-direction: column;
     border: 0;
     background-color: white;
     padding: 0 10px;
+    box-sizing: border-box;
 
     #tittle {
       display: flex;
@@ -32,6 +34,7 @@ body {
       font-size: 80px;
       text-align: center;
       justify-content: center;
+      align-items: center;
     }
 
     .pentagrama_1,
@@ -40,7 +43,8 @@ body {
       display: flex;
       flex-direction: row;
       width: 100%;
-      flex-wrap: nowrap; // Prevent breaking into multiple lines
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
 
     .linhas_espacos {
@@ -108,6 +112,7 @@ header {
   width: 100%;
   background-color: $primary-color;
   padding: 10px;
+  box-sizing: border-box;
 
   .btn-group {
     display: flex;
@@ -251,18 +256,66 @@ footer {
 @keyframes move {
   0% {
     text-shadow: 6px -4px 0 rgb(255, 0, 179), 4px -3px 0 rgb(255, 0, 179),
-      2px -2px 0 rgb(255, 0, 179), 1px -1px 0 rgb(255, 0, 179),
-      -4px 6px 0 rgb(43, 255, 0), -3px 4px 0 rgb(43, 255, 0),
-      -2px 2px 0 rgb(43, 255, 0), -1px 1px 0 rgb(43, 255, 0);
+      2px -2px 0 rgb(255, 0, 179), 1px -1px 0 rgb(255, 0, 179), -4px 6px 0 rgb(43, 255, 0),
+      -3px 4px 0 rgb(43, 255, 0), -2px 2px 0 rgb(43, 255, 0), -1px 1px 0 rgb(43, 255, 0);
   }
   25% {
     text-shadow: -4px -4px 0 rgb(43, 255, 0), -3px -3px 0 rgb(43, 255, 0),
-      -2px -2px 0 rgb(43, 255, 0), -1px -1px 0 rgb(43, 255, 0),
-      6px 6x 0 rgb(255, 0, 179), 4px 4px 0 rgb(255, 0, 179),
-      2px 2px 0 rgb(255, 0, 179), 1px 1px 0 rgb(255, 0, 179);
+      -2px -2px 0 rgb(43, 255, 0), -1px -1px 0 rgb(43, 255, 0), 6px 6x 0 rgb(255, 0, 179),
+      4px 4px 0 rgb(255, 0, 179), 2px 2px 0 rgb(255, 0, 179), 1px 1px 0 rgb(255, 0, 179);
   }
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+
+    .nav-item {
+      margin: 0.5rem 0;
+
+      &.dropdown {
+        .dropdown-content {
+          position: relative;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .linhas_espacos {
+    flex: 1 1 100%;
+  }
+
+  .pentagrama_1,
+  .pentagrama_2,
+  .pentagrama_3 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .btn-group,
+    .pagIngles {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  }
+}
+/*
 @media (max-width: 995px) {
   body {
     .container {
