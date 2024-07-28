@@ -1,11 +1,12 @@
 body {
   margin: 0;
   display: flex;
-  flex-direction: row;
-  background: url("../img/fundo.jpg");
+  flex-direction: column;
+  background: url("../img/fundo.jpg") no-repeat center center fixed;
+  background-size: cover;
   width: 100%;
-  max-width: 100%;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  align-items: center;
 }
 body .container {
   margin: 35px auto 0 auto;
@@ -15,6 +16,8 @@ body .container {
   flex-direction: column;
   border: 0;
   background-color: white;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 body .container #tittle {
   display: flex;
@@ -23,6 +26,7 @@ body .container #tittle {
   font-size: 80px;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 body .container .pentagrama_1,
 body .container .pentagrama_2,
@@ -30,6 +34,8 @@ body .container .pentagrama_3 {
   display: flex;
   flex-direction: row;
   width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 body .container .linhas_espacos {
   flex: 1;
@@ -81,72 +87,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   width: 100%;
+  background-color: hsla(204, 91%, 49%, 0.9);
+  padding: 10px;
+  box-sizing: border-box;
 }
 header .btn-group {
-  position: relative;
-  display: inline-block;
+  display: flex;
 }
-header .btn-group .btn-primary {
-  color: #fff;
+header .pagIngles {
+  display: flex;
+}
+header .pagIngles .btn {
   background-color: hsla(204, 91%, 49%, 0.9);
   border: none;
-  padding: 0.375rem 0.75rem;
-  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
 }
-header .btn-group .btn-primary:hover, header .btn-group .btn-primary:focus {
-  background-color: rgba(9, 118, 190, 0.9);
-}
-header .btn-group .btn-primary .dropdown-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-header .btn-group .btn-primary .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  top: 100%;
-  left: 0;
-}
-header .btn-group .btn-primary .dropdown-menu .dropdown-item {
-  padding: 0.5rem 1rem;
-  text-align: center;
-  color: hsla(204, 91%, 49%, 0.9);
-  text-decoration: none;
-  display: block;
-}
-header .btn-group .btn-primary .dropdown-menu .dropdown-item:hover {
+header .pagIngles .btn .badge {
   background-color: hsla(204, 91%, 49%, 0.9);
   color: white;
-}
-header .btn-group .btn-primary:hover .dropdown-menu, header .btn-group .btn-primary:focus-within .dropdown-menu {
-  display: block;
-}
-header .pagIngles .btn-primary {
-  color: #fff;
-  background-color: hsla(204, 91%, 49%, 0.9);
-  border: none;
-  padding: 0.375rem 0.75rem;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-}
-header .pagIngles .btn-primary:hover, header .pagIngles .btn-primary:focus {
-  background-color: rgba(9, 118, 190, 0.9);
-}
-header .pagIngles .btn-primary .badge-primary {
-  color: #fff;
-  background-color: hsla(204, 91%, 49%, 0.9);
   text-decoration: none;
-  padding: 0.25rem 0.4rem;
-  border-radius: 0.25rem;
 }
-header .pagIngles .btn-primary .badge-primary:hover, header .pagIngles .btn-primary .badge-primary:focus {
+header .pagIngles .btn:hover {
   background-color: rgba(9, 118, 190, 0.9);
 }
 
@@ -265,5 +229,32 @@ footer .textfoot {
   .navbar .nav-item.dropdown .dropdown-content {
     position: relative;
     width: 100%;
+  }
+  .container {
+    margin: 20px auto;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .linhas_espacos {
+    flex: 1 1 100%;
+  }
+  .pentagrama_1,
+  .pentagrama_2,
+  .pentagrama_3 {
+    flex-direction: column;
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .btn-group,
+  header .pagIngles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

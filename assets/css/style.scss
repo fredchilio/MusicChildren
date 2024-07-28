@@ -5,30 +5,27 @@ $container-width: 100%;
 $max-container-width: 1200px;
 $linha-height: 3px;
 $espaco-height: 40px;
-$secondary-color: hsla(34, 91%, 49%, 0.9);
-$hover-color: hsla(304, 91%, 49%, 0.9);
-$font-size-title: 36px;
-$font-family-title: 'Comic Sans MS', 'Comic Sans', cursive;
-$animation-duration: 0.3s;
-$animation-timing: ease-in-out;
 
 body {
   margin: 0;
   display: flex;
-  flex-direction: row;
-  background: url("../img/fundo.jpg");
+  flex-direction: column;
+  background: url("../img/fundo.jpg") no-repeat center center fixed;
+  background-size: cover;
   width: 100%;
-  max-width: 100%;
-  flex-wrap: wrap;
-  
+  max-width: $max-container-width;
+  align-items: center;
+
   .container {
-    margin: 35px auto 0 auto; // Centraliza o container horizontalmente
-    width: $container-width;
+    margin: 35px auto 0 auto;
+    width: 100%;
     max-width: $max-container-width;
-    display: flex;
+    display:flex;
     flex-direction: column;
     border: 0;
     background-color: white;
+    padding: 0 10px;
+    box-sizing: border-box;
 
     #tittle {
       display: flex;
@@ -37,15 +34,7 @@ body {
       font-size: 80px;
       text-align: center;
       justify-content: center;
-
-
-    //-----
-    //------
-    
-    
-
-
-    //-----
+      align-items: center;
     }
 
     .pentagrama_1,
@@ -53,11 +42,13 @@ body {
     .pentagrama_3 {
       display: flex;
       flex-direction: row;
-      width: 100%; // Garante que os pentagramas usem toda a largura do container
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
 
     .linhas_espacos {
-      flex: 1; // Faz com que cada .linhas_espacos ocupe uma parte igual da largura
+      flex: 1;
       border: 0;
       display: flex;
       flex-direction: column;
@@ -118,89 +109,33 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  
   width: 100%;
+  background-color: $primary-color;
+  padding: 10px;
+  box-sizing: border-box;
 
   .btn-group {
-    position: relative;
-    display: inline-block;
-
-    .btn-primary {
-      color: #fff;
-      background-color: $primary-color;
-      border: none;
-      padding: 0.375rem 0.75rem;
-      cursor: pointer;
-
-      &:hover,
-      &:focus {
-        background-color: darken($primary-color, 10%);
-      }
-
-      .dropdown-toggle {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .dropdown-menu {
-        display: none;
-        position: absolute;
-        background-color: white;
-        min-width: 160px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        top: 100%;
-        left: 0;
-
-        .dropdown-item {
-          padding: 0.5rem 1rem;
-          text-align: center;
-          color: $primary-color;
-          text-decoration: none;
-          display: block;
-
-          &:hover {
-            background-color: $primary-color;
-            color: white;
-          }
-        }
-      }
-
-      &:hover .dropdown-menu,
-      &:focus-within .dropdown-menu {
-        display: block;
-      }
-    }
+    display: flex;
   }
 
   .pagIngles {
-    .btn-primary {
-      color: #fff;
+    display: flex;
+
+    .btn {
       background-color: $primary-color;
       border: none;
-      padding: 0.375rem 0.75rem;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
 
-      &:hover,
-      &:focus {
-        background-color: darken($primary-color, 10%);
+      .badge {
+        background-color: $primary-color;
+        color: white;
+        text-decoration: none;
       }
 
-      .badge-primary {
-        color: #fff;
-        background-color: $primary-color;
-        text-decoration: none;
-        padding: 0.25rem 0.4rem;
-        border-radius: 0.25rem;
-
-        &:hover,
-        &:focus {
-          background-color: darken($primary-color, 10%);
-        }
+      &:hover {
+        background-color: darken($primary-color, 10%);
       }
     }
   }
@@ -245,7 +180,7 @@ header {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 1;
         top: 100%;
-        left: 0; // Alinhamento à esquerda
+        left: 0;
 
         a {
           color: $primary-color;
@@ -278,7 +213,7 @@ footer {
 
   .foot {
     background-color: transparent;
-    margin: 50px auto 0 auto; // Centraliza o footer horizontalmente
+    margin: 50px auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -345,6 +280,38 @@ footer {
           width: 100%;
         }
       }
+    }
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .linhas_espacos {
+    flex: 1 1 100%;
+  }
+
+  .pentagrama_1,
+  .pentagrama_2,
+  .pentagrama_3 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .btn-group,
+    .pagIngles {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
     }
   }
 }
