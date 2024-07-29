@@ -230,4 +230,9 @@ footer .textfoot {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+.highlight {
+  border: 2px solid red;
+  border-radius: 50%;
+  box-sizing: border-box; /* Inclui a borda no tamanho total do elemento */
 }/*# sourceMappingURL=style.css.map */
