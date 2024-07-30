@@ -134,7 +134,7 @@ document.querySelector(".m4").addEventListener("click", () => {
   window.trocarMusica(musicas.musica4);
 });
 document.querySelector(".m5").addEventListener("click", () => {
-  window.trocarMusica(musicas.musica4);
+  window.trocarMusica(musicas.musica5);
 });
 
 // Adiciona event listener para o botão Play
